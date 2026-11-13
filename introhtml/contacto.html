@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Contacto - Bridgerton</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="contacto">
+    
+
+<nav>
+<a href="index.html">Inicio</a>
+<a href="temporada1.html">Temporada 1</a>
+<a href="temporada2.html">Temporada 2</a>
+<a href="temporada3.html">Temporada 3</a>
+<a href="contacto.html">Contacto</a>
+</nav>
+
+<h1>Contacto</h1>
+
+<div class="form-container">
+
+<form action="#" method="POST" enctype="multipart/form-data">
+ 
+            <input type="text" name="nombre" placeholder="Nombre completo" required>
+            <input type="email" name="correo" placeholder="Correo electrónico" required>
+            <input type="tel" name="telefono" placeholder="Número telefónico">
+ 
+            <label style="display:block; text-align:left; margin-left:10px; font-size:12px;">Fecha de registro:</label>
+            <input type="date" name="fecha">
+ 
+            <select name="motivo" style="width:100%; margin:10px 0; padding:10px; border-radius:10px; border:none;">
+                <option value="" disabled selected>¿Cuál es tu temporada favorita?</option>
+                <option value="temp1">temporada 1</option>
+                <option value="temp2">temporada 2</option>
+                <option value="temp3">temporada 3</option>
+                <option value="temp4">temporada 4</option>
+            </select>
+ 
+            <label style="display:block; text-align:left; margin-left:10px; font-size:12px;">Sube una foto de quien crees que sera la nueva lady Whistledown:</label>
+            <input type="file" name="archivo" accept="image/*">
+ 
+            <textarea name="comentario" placeholder="Escribe tu comentario aquí..." rows="4"></textarea>
+ 
+            <div style="text-align:left; margin:10px;">
+                <input type="checkbox" id="terminos" name="terminos" required style="width:auto;">
+                <label for="terminos" style="font-size:12px;">Acepto los términos y condiciones</label>
+            </div>
+            <div class="grupo-input">
+                <p style="text-align:left; font-size:14px; margin-bottom:10px;">¿desde que año conoces la serie?</p>
+                <label><input type="radio" name="origen" value="instagram"> 2020</label>
+                <label><input type="radio" name="origen" value="amigo"> 2022</label>
+                <label><input type="radio" name="origen" value="publicidad"> 2024</label>
+                <label><input type="radio" name="origen" value="publicidad"> 2026</label>
+            </div>
+ 
+            <div class="grupo-input">
+                <label style="display:block; text-align:left; font-size:14px;">califica la serie:</label>
+                <input type="range" name="presupuesto" min="0" max="10" step="1"
+                    oninput="this.nextElementSibling.value = this.value">
+                <output>5</output><span> puntos</span>
+            </div>
+ 
+            <div class="grupo-input">
+                <p style="text-align:left; font-size:14px; margin-bottom:10px;">¿Quien es tu bridgerton favorito?</p>
+                <label><input type="checkbox" name="Bridgerton" value="Daphne"> Daphne</label>
+                <label><input type="checkbox" name="Bridgerton" value="Eloise"> Eloise</label>
+                <label><input type="checkbox" name="Bridgerton" value="Francesca"> Francesca</label>
+                <label><input type="checkbox" name="Bridgerton" value="Hyacinth">Hyacinth</label>
+                <label><input type="checkbox" name="Bridgerton" value="Anthony"> Anthony</label>
+                <label><input type="checkbox" name="Bridgerton" value="Benedict"> Benedict</label>
+                <label><input type="checkbox" name="Bridgerton" value="Colin"> Colin</label>
+                <label><input type="checkbox" name="Bridgerton" value="Gregory"> Gregory</label>
+            </div>
+            <button type="submit">Enviar comentario</button>
+        </form>
+    </section>
+</div>
+
+<footer>
+ portal de tecnologia © 2026  contacto: slamprea10@gmail.com
+</footer>
+
+</body>
+</html>

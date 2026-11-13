@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sara Lamprea | Portafolio</title>
+  <meta name="description" content="Sara Lamprea, estudiante de ingeniería de software. Proyectos en HTML, CSS, JavaScript y Java.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">Sara Lamprea</a>
+      <nav aria-label="Principal">
+        <ul class="nav">
+          <li><a href="index.html" aria-current="page">Inicio</a></li>
+          <li>
+            <details>
+              <summary>Proyectos</summary>
+              <ul class="submenu">
+                <li><a href="proyectos.html">Ver todos los proyectos</a></li>
+                <li><a href="proyectos.html#proyecto-1">Fan page de Bridgerton</a></li>
+                <li><a href="proyectos.html#proyecto-2">Calculadora de IMC</a></li>
+                <li><a href="proyectos.html#proyecto-3">Registro de horas laborales</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="sobre-mi.html">Sobre mí</a></li>
+          <li>
+            <details>
+              <summary>Contacto</summary>
+              <ul class="submenu">
+                <li><a href="contacto.html">Formulario de contacto</a></li>
+                <li><a href="mailto:slamprea10@gmail.com">slamprea10@gmail.com</a></li>
+                <li><a href="https://www.linkedin.com/in/sara-lamprea-904a59392/" target="_blank" rel="noopener">LinkedIn (nueva pestaña)</a></li>
+                <li><a href="https://github.com/slamprea" target="_blank" rel="noopener">GitHub (nueva pestaña)</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <div class="wrap hero">
+      <div>
+        <h1>Hola, soy Sara Lamprea.</h1>
+        <p class="lead">Estudiante de ingeniería de software con bases en el ciclo de vida del software, programación orientada a objetos y lógica de programación, aplicadas en proyectos prácticos.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="proyectos.html">Ver proyectos</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/sara-lamprea-904a59392/" target="_blank" rel="noopener">Ver mi LinkedIn</a>
+        </div>
+      </div>
+      <aside class="ficha" aria-label="Resumen rápido">
+        <dl>
+          <dt>Rol</dt>
+          <dd>Estudiante de ingeniería de software y técnica en programación de aplicaciones de software</dd>
+          <dt>Herramientas</dt>
+          <dd>HTML, CSS, JavaScript, Java</dd>
+          <dt>Ubicación</dt>
+          <dd>Bogotá, Colombia</dd>
+          <dt>Contacto</dt>
+          <dd><a href="mailto:slamprea10@gmail.com">slamprea10@gmail.com</a></dd>
+        </dl>
+      </aside>
+    </div>
+
+    <section class="section" id="proyectos" aria-labelledby="destacados">
+      <div class="wrap">
+        <h2 id="destacados">Mis proyectos</h2>
+        <p class="section-intro">Tres proyectos entre clases y prácticas. Cada uno tiene su caso de estudio con el problema, lo que hice y el resultado.</p>
+        <div class="grid">
+          <article class="card">
+            
+            <div class="thumb" role="img" aria-label="Vista previa: Fan page de Bridgerton">Bridgerton</div>
+            <img src="img/bridgerton.png" alt="bridgerton" class="thumb">
+
+            <div class="card-body">
+              <h3>Fan page de Bridgerton</h3>
+              <ul class="tags"><li>HTML</li><li>CSS</li></ul>
+              <p>Fan page de la serie de Netflix, creada para la clase de Lenguajes de Internet.</p>
+              <a class="card-link" href="proyectos.html#proyecto-1">Leer caso de estudio</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="thumb thumb-2" role="img" aria-label="Vista previa: Calculadora de IMC">IMC</div>
+            <img src="img/imc.png" alt="imc" class="thumb thumb-2">
+
+            <div class="card-body">
+              <h3>Calculadora de IMC</h3>
+              <ul class="tags"><li>HTML</li><li>JavaScript</li></ul>
+              <p>Prototipo que calcula el índice de masa corporal y sugiere dieta y ejercicio según el resultado.</p>
+              <a class="card-link" href="proyectos.html#proyecto-2">Leer caso de estudio</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="thumb thumb-3" role="img" aria-label="Vista previa: Sistema de registro de horas laborales">Java</div>
+            <img src="img/yapo.png" alt="yapo" class="thumb thumb-3">
+
+            <div class="card-body">
+              <h3>Sistema de registro de horas laborales</h3>
+              <ul class="tags"><li>Java</li><li>POO</li></ul>
+              <p>Pagina web de portal empleo</p>
+              <a class="card-link" href="proyectos.html#proyecto-3">Leer caso de estudio</a>
+
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="como">
+      <div class="wrap">
+        <h2 id="como">Cómo trabajo</h2>
+        <ol class="process">
+          <li><span class="num">1</span><h3>Entender</h3><p>Defino qué problema hay que resolver y para quién.</p></li>
+          <li><span class="num">2</span><h3>Diseñar</h3><p>Organizo la estructura antes de escribir código.</p></li>
+          <li><span class="num">3</span><h3>Construir</h3><p>Programo por partes, con código ordenado.</p></li>
+          <li><span class="num">4</span><h3>Probar</h3><p>Reviso que funcione y corrijo antes de entregar.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="cta">
+      <div class="wrap">
+        <h2 id="cta">¿Tienes un proyecto o una vacante?</h2>
+        <p>Escríbeme y respondo en menos de dos días.</p>
+        <div class="btn-row"><a class="btn btn-primary" href="contacto.html">Contactarme</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">© 2026 Sara Lamprea · Hecho a mano con HTML y CSS.</div>
+  </footer>
+</body>
+</html>
