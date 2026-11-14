@@ -8,7 +8,7 @@
 
 <body>
 
-    <h1>Calcula y clasifica tu índice de masa muscular</h1>
+    <h1>Calcula y clasifica tu índice de masa corporal</h1>
 
     <div class="contenedor">
         <h2>Aquí ingresarás tu peso y altura</h2>
@@ -32,6 +32,11 @@
             const altura = parseFloat(
                 document.getElementById("altura").value
             );
+
+                        if (isNaN(peso) || isNaN(altura) || peso <= 0 || altura <= 0) {
+                document.getElementById("resultado").innerHTML = "Ingresa un peso y una altura válidos.";
+                return;
+            }
 
             const imc = peso / (altura * altura);
 
